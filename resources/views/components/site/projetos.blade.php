@@ -1,4 +1,4 @@
-<section class="py-16 bg-roxo">
+<section id="projetos" class="py-16 bg-roxo">
     <div class="container mx-auto">
         <h1 data-aos="fade-down" data-aos-duration="500" data-aos-once="true" data-aos-delay="50" class="mb-10 text-center text-white font-semibold text-2xl lg:text-4xl">PROJETOS</h1>
 

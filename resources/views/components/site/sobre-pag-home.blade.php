@@ -2,7 +2,7 @@
     <div class="container mx-auto">
         <div class="grid grid-cols-12">
             <div data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="50" class="mb-10 lg:mb-0 col-span-12 lg:col-span-6 flex items-center justify-center">
-                <h1 class="text-center lg:text-start py-5 ps-3 border-rosa border-b-4 lg:border-b-0 border-s-0 lg:border-s-4 text-2xl lg:text-4xl font-semibold text-white">Sobre a <br> MANU DESIGN</h1>
+                <h1 class="text-center lg:text-start py-5 ps-3 border-rosa border-b-4 lg:border-b-0 border-s-0 lg:border-s-4 text-2xl lg:text-4xl font-semibold text-white">Sobre a <br> MANU DESIGN <br> CRIATIVO</h1>
             </div>
             
             <div data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="50" class="col-span-12 lg:col-span-6">

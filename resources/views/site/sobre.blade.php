@@ -4,7 +4,13 @@
 
 @section('content') 
 
+    <x-site.wpp-float/>
     <x-site.navegacao :sobre="true"/>
-    <h1>Sobre</h1>
+    <x-site.banner-sobre/>
+    <x-site.content-sobre/>
+    <x-site.meus-servicos/>
+    <x-site.projetos/>
+    <x-site.contato/>
+    <x-site.footer :sobre="true"/>
 
 @endsection 

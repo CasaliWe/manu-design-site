@@ -1,9 +1,6 @@
 @props([
     "home" => false,
-    "sobre" => false,
-    "servicos" => false,
-    "projetos" => false,
-    "contatos" => false,
+    "sobre" => false
 ])
 
 
@@ -13,9 +10,9 @@
     <nav class="mt-16 w-100 space-y-12 flex flex-col items-center justify-center">
         <a href="{{ route('home') }}" class="text-[22px] font-semibold {{ $home ? 'text-roxo' : 'text-white' }} mx-3">INÍCIO</a>
         <a href="{{ route('sobre') }}" class="text-[22px] font-semibold {{ $sobre ? 'text-roxo' : 'text-white' }} mx-3">SOBRE</a>
-        <a href="{{ route('servicos') }}" class="text-[22px] font-semibold {{ $servicos ? 'text-roxo' : 'text-white' }} mx-3">SERVIÇOS</a>
-        <a href="{{ route('projetos') }}" class="text-[22px] font-semibold {{ $projetos ? 'text-roxo' : 'text-white' }} mx-3">PROJETOS</a>
-        <a href="{{ route('contatos') }}" class="text-[22px] font-semibold {{ $contatos ? 'text-roxo' : 'text-white' }} mx-3">CONTATOS</a>
+        <a onclick="abrirMenuMobile()" href="#servicos" class="text-white text-[22px] font-semibold mx-3">SERVIÇOS</a>
+        <a onclick="abrirMenuMobile()" href="#projetos" class="text-white text-[22px] font-semibold mx-3">PROJETOS</a>
+        <a onclick="abrirMenuMobile()" href="#contato" class="text-white text-[22px] font-semibold mx-3">CONTATOS</a>
     </nav>
 
     <div class="flex mt-20 justify-center space-x-8 w-full">
@@ -31,9 +28,9 @@
     <nav class="hidden lg:block ">
         <a href="{{ route('home') }}" class="{{ $home ? 'text-rosa' : 'text-white' }} text-sm mx-3">INÍCIO</a>
         <a href="{{ route('sobre') }}" class="{{ $sobre ? 'text-rosa' : 'text-white' }} text-sm mx-3">SOBRE</a>
-        <a href="{{ route('servicos') }}" class="{{ $servicos ? 'text-rosa' : 'text-white' }} text-sm mx-3">SERVIÇOS</a>
-        <a href="{{ route('projetos') }}" class="{{ $projetos ? 'text-rosa' : 'text-white' }} text-sm mx-3">PROJETOS</a>
-        <a href="{{ route('contatos') }}" class="{{ $contatos ? 'text-rosa' : 'text-white' }} text-sm mx-3">CONTATOS</a>
+        <a href="#servicos" class="text-white text-sm mx-3">SERVIÇOS</a>
+        <a href="#projetos" class="text-white text-sm mx-3">PROJETOS</a>
+        <a href="#contato" class="text-white text-sm mx-3">CONTATOS</a>
         
         <a href="" class="text-white text-sm ms-7"> <i class="fab fa-instagram"></i> </a>
         <a href="" class="text-white text-sm mx-2"> <i class="fab fa-behance"></i> </a>
