@@ -8,9 +8,9 @@
 
         <a href="{{ route('sobre') }}" class="xxl:mt-8 rounded-lg bg-rosa py-3 px-10 xxl:py-4 xxl:px-16 xxl:text-[20px]">SAIBA MAIS</a>
 
-        <div class="text-white mt-14 flex flex-col animate-bounce cursor-pointer">
+        <a href="#sobre-pg-home" class="text-white mt-14 flex flex-col animate-bounce cursor-pointer">
             <i class="xxl:text-[23px] fas fa-chevron-down"></i>
             <i class="xxl:text-[23px] mt-[-7px] fas fa-chevron-down"></i>
-        </div>
+        </a>
     </div>
 </section>
