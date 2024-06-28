@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ asset('imagens/favicon/apple-icon-114x114.png') }}">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
+    <meta property="og:image" content="{{ asset('imagens/site/icone.jpg') }}">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
     <meta property="og:title" content="Manu Design Criativo">
     <meta name="description" content="Traduzindo a Essência da Sua Empresa através da Identidade Visual">
     <meta property="og:description" content="Traduzindo a Essência da Sua Empresa através da Identidade Visual">
@@ -23,11 +23,11 @@
     {{-- animation scroll --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    {{-- css tailwind --}}
-    @vite('resources/css/style.css')
-
     {{-- js tailwind --}}
     @vite('resources/js/app.js')
+
+    {{-- css tailwind --}}
+    @vite('resources/css/style.css')
 
     {{-- css | components --}}
     @stack('css')

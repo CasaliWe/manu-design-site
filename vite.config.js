@@ -6,7 +6,7 @@ import autoprefixer from 'autoprefixer';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/js/app.js'],
+            input: ['resources/js/app.js', 'resources/css/style.css'],
             refresh: true,
         }),
     ],
