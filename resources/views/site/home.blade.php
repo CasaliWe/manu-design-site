@@ -4,6 +4,8 @@
 
 @section('content')
 
+    <x-site.loading/>
+    <x-site.modal-aviso/>
     <x-site.wpp-float/>
     <x-site.navegacao :home="true"/>
     <x-site.banner-home/>

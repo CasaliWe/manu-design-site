@@ -23,14 +23,17 @@
     {{-- animation scroll --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    {{-- css tailwind | global --}}
+    {{-- css tailwind --}}
     @vite('resources/css/style.css')
 
-    {{-- js tailwind | global --}}
+    {{-- js tailwind --}}
     @vite('resources/js/app.js')
 
     {{-- css | components --}}
     @stack('css')
+
+    {{-- css global --}}
+    <link rel="stylesheet" href="{{asset('css/global.css')}}">
 
     <title>@yield('title')</title>
 </head>
@@ -47,6 +50,9 @@
 
     {{-- js | components --}}
     @stack('scripts')
+
+    {{-- js global --}}
+    <script src="{{asset('js/global.js')}}"></script>
 </body>
 </html>
 

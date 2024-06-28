@@ -1,0 +1,15 @@
+/* ESTILOS GLOBAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    transition: 400ms;
+}
+a:hover{
+    opacity: .7;
+    transition: 400ms;
+}

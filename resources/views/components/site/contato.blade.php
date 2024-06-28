@@ -15,11 +15,12 @@
             </div>
 
             <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-delay="50" class="col-span-12 lg:col-span-6 p-2 lg:p-8">
-                <form action="" method="post" class="w-full h-full flex flex-col items-center">
-                    <input placeholder="Nome*" class="p-2 w-full bg-zinc-300 mb-3 rounded-md" type="text" required>
-                    <input placeholder="E-mail*" class="p-2 w-full bg-zinc-300 mb-3 rounded-md" type="email" required>
-                    <input placeholder="Whatsapp*" class="p-2 w-full bg-zinc-300 mb-3 rounded-md" type="tel" required>
-                    <textarea placeholder="Mensagem*" class="p-2 w-full bg-zinc-300 mb-8 rounded-md" name="" id="" rows="3" required></textarea>
+                <form onsubmit="loading()" action="{{route('enviar-email')}}" method="post" class="w-full h-full flex flex-col items-center">
+                    @csrf
+                    <input name="nome" placeholder="Nome*" class="p-2 w-full bg-zinc-300 mb-3 rounded-md" type="text" required>
+                    <input name="email" placeholder="E-mail*" class="p-2 w-full bg-zinc-300 mb-3 rounded-md" type="email" required>
+                    <input name="whatsapp" id="tel-form" inputmode="tel" maxlength="15" placeholder="Whatsapp*" class="p-2 w-full bg-zinc-300 mb-3 rounded-md" type="tel" required>
+                    <textarea name="mensagem" placeholder="Mensagem*" class="p-2 w-full bg-zinc-300 mb-8 rounded-md" name="" id="" rows="3" required></textarea>
                     
                     <button type="submit" class="hover:bg-rosa/80 transition-bg duration-500  rounded-md py-2 px-14 border-none bg-rosa text-white">Enviar</button>
                 </form>
@@ -27,3 +28,8 @@
         </div>
     </div>
 </section>
+
+
+@push('scripts')
+    <script src="{{ asset('js/components/contato.js') }}"></script>
+@endpush

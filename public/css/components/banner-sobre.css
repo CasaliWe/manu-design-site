@@ -1,0 +1,9 @@
+#texto-pag-sobre{
+    padding-right: 4px;
+    animation: animaDigitalizar 250ms infinite alternate;
+}
+
+@keyframes animaDigitalizar {
+    from{border-right: 1px solid rgba(0, 0, 0, 0.037);}
+    to{border-right: 1px solid rgba(255, 255, 255, 0.555);}
+}
